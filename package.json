@@ -1,9 +1,10 @@
 {
-    "private": true,
-    "workspaces": [
-        "packages/*"
-    ],
-    "devDependencies": {
-        "lerna": "^2.11.0"
-    }
+  "private": true,
+  "workspaces": [
+    "packages/components",
+    "packages/application"
+  ],
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  }
 }

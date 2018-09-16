@@ -1,0 +1,422 @@
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: [] }
+2 verbose rootPath /Users/tioluwani/Documents/Projects/simpu-app
+3 info version 2.11.0
+4 silly existsSync /Users/tioluwani/Documents/Projects/simpu-app/VERSION
+5 silly initialize attempt
+6 silly npmConfig { registry: undefined,
+6 silly npmConfig   npmClient: undefined,
+6 silly npmConfig   npmClientArgs: undefined,
+6 silly npmConfig   mutex: undefined }
+7 silly initialize success
+8 silly execute attempt
+9 info Bootstrapping 2 packages
+10 info lifecycle preinstall
+11 silly runScript preinstall application
+12 silly application
+13 silly runScript preinstall components
+14 silly components
+15 silly hasDependencyInstalled application compression-webpack-plugin
+16 silly dependencyIsSatisfied [ 'compression-webpack-plugin',
+16 silly dependencyIsSatisfied   '^2.0.0',
+16 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/application/node_modules' ]
+17 verbose dependencyIsSatisfied compression-webpack-plugin false
+18 silly hasDependencyInstalled application dynamic-cdn-webpack-plugin
+19 silly dependencyIsSatisfied [ 'dynamic-cdn-webpack-plugin',
+19 silly dependencyIsSatisfied   '^4.0.0',
+19 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/application/node_modules' ]
+20 verbose dependencyIsSatisfied dynamic-cdn-webpack-plugin false
+21 silly hasDependencyInstalled application module-to-cdn
+22 silly dependencyIsSatisfied [ 'module-to-cdn',
+22 silly dependencyIsSatisfied   '^3.1.2',
+22 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/application/node_modules' ]
+23 verbose dependencyIsSatisfied module-to-cdn false
+24 silly hasDependencyInstalled application preload-webpack-plugin
+25 silly dependencyIsSatisfied [ 'preload-webpack-plugin',
+25 silly dependencyIsSatisfied   '^2.3.0',
+25 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/application/node_modules' ]
+26 verbose dependencyIsSatisfied preload-webpack-plugin false
+27 silly hasDependencyInstalled application react
+28 silly dependencyIsSatisfied [ 'react',
+28 silly dependencyIsSatisfied   '^16.5.1',
+28 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/application/node_modules' ]
+29 verbose dependencyIsSatisfied react true
+30 silly hasDependencyInstalled components react
+31 silly dependencyIsSatisfied [ 'react',
+31 silly dependencyIsSatisfied   '^16.4.2',
+31 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+32 verbose dependencyIsSatisfied react false
+33 silly hasDependencyInstalled application react-app-rewired
+34 silly dependencyIsSatisfied [ 'react-app-rewired',
+34 silly dependencyIsSatisfied   '^1.6.2',
+34 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/application/node_modules' ]
+35 verbose dependencyIsSatisfied react-app-rewired false
+36 silly hasDependencyInstalled application react-dom
+37 silly dependencyIsSatisfied [ 'react-dom',
+37 silly dependencyIsSatisfied   '^16.5.1',
+37 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/application/node_modules' ]
+38 verbose dependencyIsSatisfied react-dom true
+39 silly hasDependencyInstalled components react-dom
+40 silly dependencyIsSatisfied [ 'react-dom',
+40 silly dependencyIsSatisfied   '^16.4.2',
+40 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+41 verbose dependencyIsSatisfied react-dom false
+42 silly hasDependencyInstalled application react-loadable
+43 silly dependencyIsSatisfied [ 'react-loadable',
+43 silly dependencyIsSatisfied   '^5.5.0',
+43 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/application/node_modules' ]
+44 verbose dependencyIsSatisfied react-loadable true
+45 silly hasDependencyInstalled application react-scripts
+46 silly dependencyIsSatisfied [ 'react-scripts',
+46 silly dependencyIsSatisfied   '1.1.5',
+46 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/application/node_modules' ]
+47 verbose dependencyIsSatisfied react-scripts false
+48 silly hasDependencyInstalled components react-scripts
+49 silly dependencyIsSatisfied [ 'react-scripts',
+49 silly dependencyIsSatisfied   '1.1.4',
+49 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+50 verbose dependencyIsSatisfied react-scripts true
+51 silly hasDependencyInstalled components @storybook/addon-actions
+52 silly dependencyIsSatisfied [ '@storybook/addon-actions',
+52 silly dependencyIsSatisfied   '^3.4.10',
+52 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+53 verbose dependencyIsSatisfied @storybook/addon-actions false
+54 silly hasDependencyInstalled components @storybook/addon-links
+55 silly dependencyIsSatisfied [ '@storybook/addon-links',
+55 silly dependencyIsSatisfied   '^3.4.10',
+55 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+56 verbose dependencyIsSatisfied @storybook/addon-links false
+57 silly hasDependencyInstalled components @storybook/addons
+58 silly dependencyIsSatisfied [ '@storybook/addons',
+58 silly dependencyIsSatisfied   '^3.4.10',
+58 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+59 verbose dependencyIsSatisfied @storybook/addons false
+60 silly hasDependencyInstalled components @storybook/react
+61 silly dependencyIsSatisfied [ '@storybook/react',
+61 silly dependencyIsSatisfied   '^3.4.10',
+61 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+62 verbose dependencyIsSatisfied @storybook/react false
+63 silly hasDependencyInstalled components awesome-typescript-loader
+64 silly dependencyIsSatisfied [ 'awesome-typescript-loader',
+64 silly dependencyIsSatisfied   '^5.2.0',
+64 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+65 verbose dependencyIsSatisfied awesome-typescript-loader false
+66 silly hasDependencyInstalled components babel-core
+67 silly dependencyIsSatisfied [ 'babel-core',
+67 silly dependencyIsSatisfied   '^6.26.3',
+67 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+68 verbose dependencyIsSatisfied babel-core false
+69 silly hasDependencyInstalled components babel-plugin-polished
+70 silly dependencyIsSatisfied [ 'babel-plugin-polished',
+70 silly dependencyIsSatisfied   '^1.1.0',
+70 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+71 verbose dependencyIsSatisfied babel-plugin-polished false
+72 silly hasDependencyInstalled components babel-plugin-styled-components
+73 silly dependencyIsSatisfied [ 'babel-plugin-styled-components',
+73 silly dependencyIsSatisfied   '^1.7.1',
+73 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+74 verbose dependencyIsSatisfied babel-plugin-styled-components false
+75 silly hasDependencyInstalled components babel-plugin-transform-object-rest-spread
+76 silly dependencyIsSatisfied [ 'babel-plugin-transform-object-rest-spread',
+76 silly dependencyIsSatisfied   '^6.26.0',
+76 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+77 verbose dependencyIsSatisfied babel-plugin-transform-object-rest-spread false
+78 silly hasDependencyInstalled components babel-preset-es2015
+79 silly dependencyIsSatisfied [ 'babel-preset-es2015',
+79 silly dependencyIsSatisfied   '^6.24.1',
+79 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+80 verbose dependencyIsSatisfied babel-preset-es2015 false
+81 silly hasDependencyInstalled components babel-preset-react
+82 silly dependencyIsSatisfied [ 'babel-preset-react',
+82 silly dependencyIsSatisfied   '^6.24.1',
+82 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+83 verbose dependencyIsSatisfied babel-preset-react false
+84 silly hasDependencyInstalled components babel-preset-react-app
+85 silly dependencyIsSatisfied [ 'babel-preset-react-app',
+85 silly dependencyIsSatisfied   '^3.1.2',
+85 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+86 verbose dependencyIsSatisfied babel-preset-react-app false
+87 silly hasDependencyInstalled components babel-preset-stage-2
+88 silly dependencyIsSatisfied [ 'babel-preset-stage-2',
+88 silly dependencyIsSatisfied   '^6.24.1',
+88 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+89 verbose dependencyIsSatisfied babel-preset-stage-2 false
+90 silly hasDependencyInstalled components babel-runtime
+91 silly dependencyIsSatisfied [ 'babel-runtime',
+91 silly dependencyIsSatisfied   '^6.26.0',
+91 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+92 verbose dependencyIsSatisfied babel-runtime false
+93 silly hasDependencyInstalled components polished
+94 silly dependencyIsSatisfied [ 'polished',
+94 silly dependencyIsSatisfied   '^2.0.3',
+94 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+95 verbose dependencyIsSatisfied polished false
+96 silly hasDependencyInstalled components react-app-rewire-typescript
+97 silly dependencyIsSatisfied [ 'react-app-rewire-typescript',
+97 silly dependencyIsSatisfied   '^2.0.2',
+97 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+98 verbose dependencyIsSatisfied react-app-rewire-typescript false
+99 silly hasDependencyInstalled components typescript
+100 silly dependencyIsSatisfied [ 'typescript',
+100 silly dependencyIsSatisfied   '^3.0.1',
+100 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+101 verbose dependencyIsSatisfied typescript false
+102 silly hasDependencyInstalled components prop-types
+103 silly dependencyIsSatisfied [ 'prop-types',
+103 silly dependencyIsSatisfied   '^15.6.2',
+103 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+104 verbose dependencyIsSatisfied prop-types false
+105 silly hasDependencyInstalled components react-transition-group
+106 silly dependencyIsSatisfied [ 'react-transition-group',
+106 silly dependencyIsSatisfied   '^2.4.0',
+106 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+107 verbose dependencyIsSatisfied react-transition-group false
+108 silly hasDependencyInstalled components storybook
+109 silly dependencyIsSatisfied [ 'storybook',
+109 silly dependencyIsSatisfied   '^1.0.0',
+109 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+110 verbose dependencyIsSatisfied storybook false
+111 silly hasDependencyInstalled components styled-components
+112 silly dependencyIsSatisfied [ 'styled-components',
+112 silly dependencyIsSatisfied   '^3.4.2',
+112 silly dependencyIsSatisfied   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/node_modules' ]
+113 verbose dependencyIsSatisfied styled-components false
+114 silly root dependencies []
+115 silly leaf dependencies {
+115 silly leaf dependencies   "application": [
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "compression-webpack-plugin@^2.0.0",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "dynamic-cdn-webpack-plugin@^4.0.0",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "module-to-cdn@^3.1.2",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "preload-webpack-plugin@^2.3.0",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "react@^16.5.1",
+115 silly leaf dependencies       "isSatisfied": true
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "react-app-rewired@^1.6.2",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "react-dom@^16.5.1",
+115 silly leaf dependencies       "isSatisfied": true
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "react-loadable@^5.5.0",
+115 silly leaf dependencies       "isSatisfied": true
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "react-scripts@1.1.5",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     }
+115 silly leaf dependencies   ],
+115 silly leaf dependencies   "components": [
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "react@^16.4.2",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "react-dom@^16.4.2",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "react-scripts@1.1.4",
+115 silly leaf dependencies       "isSatisfied": true
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "@storybook/addon-actions@^3.4.10",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "@storybook/addon-links@^3.4.10",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "@storybook/addons@^3.4.10",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "@storybook/react@^3.4.10",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "awesome-typescript-loader@^5.2.0",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "babel-core@^6.26.3",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "babel-plugin-polished@^1.1.0",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "babel-plugin-styled-components@^1.7.1",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "babel-plugin-transform-object-rest-spread@^6.26.0",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "babel-preset-es2015@^6.24.1",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "babel-preset-react@^6.24.1",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "babel-preset-react-app@^3.1.2",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "babel-preset-stage-2@^6.24.1",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "babel-runtime@^6.26.0",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "polished@^2.0.3",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "react-app-rewire-typescript@^2.0.2",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "typescript@^3.0.1",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "prop-types@^15.6.2",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "react-transition-group@^2.4.0",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "storybook@^1.0.0",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     },
+115 silly leaf dependencies     {
+115 silly leaf dependencies       "dependency": "styled-components@^3.4.2",
+115 silly leaf dependencies       "isSatisfied": false
+115 silly leaf dependencies     }
+115 silly leaf dependencies   ]
+115 silly leaf dependencies }
+116 info Installing external dependencies
+117 verbose actions 2 actions, concurrency 4
+118 silly installInDir application [ 'compression-webpack-plugin@^2.0.0',
+118 silly installInDir   'dynamic-cdn-webpack-plugin@^4.0.0',
+118 silly installInDir   'module-to-cdn@^3.1.2',
+118 silly installInDir   'preload-webpack-plugin@^2.3.0',
+118 silly installInDir   'react@^16.5.1',
+118 silly installInDir   'react-app-rewired@^1.6.2',
+118 silly installInDir   'react-dom@^16.5.1',
+118 silly installInDir   'react-loadable@^5.5.0',
+118 silly installInDir   'react-scripts@1.1.5' ]
+119 silly installInDir backup /Users/tioluwani/Documents/Projects/simpu-app/packages/application/package.json
+120 silly rename [ '/Users/tioluwani/Documents/Projects/simpu-app/packages/application/package.json',
+120 silly rename   '/Users/tioluwani/Documents/Projects/simpu-app/packages/application/package.json.lerna_backup' ]
+121 silly installInDir components [ 'react@^16.4.2',
+121 silly installInDir   'react-dom@^16.4.2',
+121 silly installInDir   'react-scripts@1.1.4',
+121 silly installInDir   '@storybook/addon-actions@^3.4.10',
+121 silly installInDir   '@storybook/addon-links@^3.4.10',
+121 silly installInDir   '@storybook/addons@^3.4.10',
+121 silly installInDir   '@storybook/react@^3.4.10',
+121 silly installInDir   'awesome-typescript-loader@^5.2.0',
+121 silly installInDir   'babel-core@^6.26.3',
+121 silly installInDir   'babel-plugin-polished@^1.1.0',
+121 silly installInDir   'babel-plugin-styled-components@^1.7.1',
+121 silly installInDir   'babel-plugin-transform-object-rest-spread@^6.26.0',
+121 silly installInDir   'babel-preset-es2015@^6.24.1',
+121 silly installInDir   'babel-preset-react@^6.24.1',
+121 silly installInDir   'babel-preset-react-app@^3.1.2',
+121 silly installInDir   'babel-preset-stage-2@^6.24.1',
+121 silly installInDir   'babel-runtime@^6.26.0',
+121 silly installInDir   'polished@^2.0.3',
+121 silly installInDir   'react-app-rewire-typescript@^2.0.2',
+121 silly installInDir   'typescript@^3.0.1',
+121 silly installInDir   'prop-types@^15.6.2',
+121 silly installInDir   'react-transition-group@^2.4.0',
+121 silly installInDir   'storybook@^1.0.0',
+121 silly installInDir   'styled-components@^3.4.2' ]
+122 silly installInDir backup /Users/tioluwani/Documents/Projects/simpu-app/packages/components/package.json
+123 silly rename [ '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/package.json',
+123 silly rename   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/package.json.lerna_backup' ]
+124 silly installInDir writing tempJson { dependencies:
+124 silly installInDir    { 'compression-webpack-plugin': '^2.0.0',
+124 silly installInDir      'dynamic-cdn-webpack-plugin': '^4.0.0',
+124 silly installInDir      'module-to-cdn': '^3.1.2',
+124 silly installInDir      'preload-webpack-plugin': '^2.3.0',
+124 silly installInDir      react: '^16.5.1',
+124 silly installInDir      'react-app-rewired': '^1.6.2',
+124 silly installInDir      'react-dom': '^16.5.1',
+124 silly installInDir      'react-loadable': '^5.5.0',
+124 silly installInDir      'react-scripts': '1.1.5' } }
+125 silly installInDir writing tempJson { dependencies:
+125 silly installInDir    { react: '^16.4.2',
+125 silly installInDir      'react-dom': '^16.4.2',
+125 silly installInDir      'react-scripts': '1.1.4',
+125 silly installInDir      '@storybook/addon-actions': '^3.4.10',
+125 silly installInDir      '@storybook/addon-links': '^3.4.10',
+125 silly installInDir      '@storybook/addons': '^3.4.10',
+125 silly installInDir      '@storybook/react': '^3.4.10',
+125 silly installInDir      'awesome-typescript-loader': '^5.2.0',
+125 silly installInDir      'babel-core': '^6.26.3',
+125 silly installInDir      'babel-plugin-polished': '^1.1.0',
+125 silly installInDir      'babel-plugin-styled-components': '^1.7.1',
+125 silly installInDir      'babel-plugin-transform-object-rest-spread': '^6.26.0',
+125 silly installInDir      'babel-preset-es2015': '^6.24.1',
+125 silly installInDir      'babel-preset-react': '^6.24.1',
+125 silly installInDir      'babel-preset-react-app': '^3.1.2',
+125 silly installInDir      'babel-preset-stage-2': '^6.24.1',
+125 silly installInDir      'babel-runtime': '^6.26.0',
+125 silly installInDir      polished: '^2.0.3',
+125 silly installInDir      'react-app-rewire-typescript': '^2.0.2',
+125 silly installInDir      typescript: '^3.0.1',
+125 silly installInDir      'prop-types': '^15.6.2',
+125 silly installInDir      'react-transition-group': '^2.4.0',
+125 silly installInDir      storybook: '^1.0.0',
+125 silly installInDir      'styled-components': '^3.4.2' } }
+126 silly getExecOpts { cwd: '/Users/tioluwani/Documents/Projects/simpu-app/packages/application' }
+127 silly installInDir [ 'npm', [ 'install' ] ]
+128 silly getExecOpts { cwd: '/Users/tioluwani/Documents/Projects/simpu-app/packages/components' }
+129 silly installInDir [ 'npm', [ 'install' ] ]
+130 silly installInDir cleanup /Users/tioluwani/Documents/Projects/simpu-app/packages/components/package.json
+131 silly renameSync [ '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/package.json.lerna_backup',
+131 silly renameSync   '/Users/tioluwani/Documents/Projects/simpu-app/packages/components/package.json' ]
+132 verbose installed leaf components
+133 error execute callback with error
+134 error Error: Command failed: npm install
+134 error npm WARN deprecated babel-preset-es2015@6.24.1: 🙌  Thanks for using Babel: we recommend using babel-preset-env now: please read babeljs.io/env to update!
+134 error npm WARN deprecated nomnom@1.8.1: Package no longer supported. Contact support@npmjs.com for more info.
+134 error npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+134 error npm ERR! code E404
+134 error npm ERR! 404 Not Found: @storybook/node-logger@3.4.10
+134 error
+134 error npm ERR! A complete log of this run can be found in:
+134 error npm ERR!     /Users/tioluwani/.npm/_logs/2018-09-16T14_42_04_086Z-debug.log
+134 error
+134 error     at Promise.all.then.arr (/Users/tioluwani/.nvm/versions/node/v8.9.4/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+134 error     at <anonymous>

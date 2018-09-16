@@ -1,7 +1,15 @@
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled, { css, injectGlobal } from 'styled-components';
 import { fontFamily, fontWeight } from '../../design-system/fonts';
 import { gray } from '../../design-system/colors';
+
+
+injectGlobal`
+*, html, body {
+    padding: 0;
+    margin: 0;
+}
+`;
 
 const TextStyle = ({
   fontSize,
