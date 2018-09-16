@@ -4,6 +4,17 @@
     "packages/components",
     "packages/application"
   ],
+  "scripts": {
+    "build:application": "yarn workspace application build",
+    "count": "cloc packages/components",
+    "server": "node packages/local_server/dist/local/index.js",
+    "start": "lerna exec --scope tuteria_tutor_app yarn start",
+    "build:all": "mkdir -p deploy && yarn build:application",
+    "test": "lerna exec --scope tuteria_tutor_app yarn test",
+    "push": "git push && git push upstream",
+    "deploy:files": "cp -r deploy/*.html ../simpu/simpu-app/f-static",
+    "deploy": "rm -rf ../simpu-app"
+  },
   "devDependencies": {
     "lerna": "^2.11.0"
   }
