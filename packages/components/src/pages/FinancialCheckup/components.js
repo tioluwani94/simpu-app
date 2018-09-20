@@ -39,6 +39,29 @@ ProgressBar.propTypes = {
   progressBg: PropTypes.string,
 };
 
+const QuestionStyle = `
+  .question-text {
+    padding-bottom: 32px;
+    text-align:center;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .options-list {
+    text-align: left;
+    border-radius: 8px;
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+    li {
+      border-bottom: 1px solid #e1e1e1;
+      margin: 0;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+`;
+
 export class Question extends React.Component {
   state = { value: this.props.value };
   componentWillReceiveProps(nextProps) {
@@ -62,30 +85,7 @@ export class Question extends React.Component {
   render() {
     const { question, options, onChange, name, style } = this.props;
     return (
-      <Div
-        style={style}
-        cssProp={`
-          .question-text {
-            padding-bottom: 16px;
-            text-align:center;
-            font-size: 24px;
-          }
-          .options-list {
-            text-align: left;
-            border-radius: 8px;
-            border: 1px solid #e1e1e1;
-            overflow: hidden;
-            li {
-              border-bottom: 1px solid #e1e1e1;
-              margin: 0;
-
-              &:last-of-type {
-                border-bottom: none;
-              }
-            }
-          }
-  `}
-      >
+      <Div style={style} cssProp={QuestionStyle}>
         <Heading className="question-text">{question}</Heading>
         <UL className="options-list">
           {options.map((option, i) => (

@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import TransitionGroup from 'react-transition-group/TransitionGroup';
 import { ProgressBar, Question } from './components';
 import { Div } from '../../primitives/Layout';
@@ -90,106 +91,108 @@ function SlideDownTransition({ children, duration, in: inProp }) {
   );
 }
 
+const FinancialCheckupStyle = styled.div`
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 2px 10px rgba(0, 0, 0, 0.06);
+    padding: 24px;
+    z-index: 10;
+
+    h1 {
+      padding-right: 32px;
+    }
+    a {
+      padding-left: 64px;
+      display: inline-block;
+      color: #aaa;
+      text-decoration: none;
+      svg {
+        fill: currentColor;
+      }
+    }
+  }
+  .questions-sections {
+    max-width: 640px;
+    margin: 240px auto;
+  }
+  .footer-section {
+    position: fixed;
+    height: 95px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px 0;
+    button {
+      display: flex;
+      align-items: center;
+    }
+    button:first-of-type {
+      &:hover {
+        color: #aaa;
+      }
+      svg {
+        fill: #ddd;
+      }
+    }
+    button:last-of-type {
+      svg {
+        fill: #ffffff;
+      }
+    }
+  }
+`;
+
 class FinancialCheckupPage extends React.Component {
   render() {
     const {
-      state: { questions, count, prevStep, nextStep, updateQuestions, progressBarWidth },
+      state: {
+        questions,
+        count,
+        prevStep,
+        nextStep,
+        updateQuestions,
+        progressBarWidth,
+      },
     } = this.props;
-    return (
-      <Div>
-        <Div
-          cssProp={`
-            display:flex;
-            align-items: center;
-            background: #ffffff; 
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 2px 10px rgba(0, 0, 0, 0.06); 
-            padding: 24px;
-
-            h1 {
-                padding-right: 32px;
-            }
-            svg {
-                padding-left: 64px;
-                fill: #aaa;
-            }
-          `}
-        >
+    return <FinancialCheckupStyle>
+        <Div className="header">
           <Heading>Simpu</Heading>
           <ProgressBar width={progressBarWidth} />
-          <Icon icon={icons.ANDROID_CLOSE} height="32" width="32" />
+          {/* <a href="#"> */}
+            <Icon icon={icons.ANDROID_CLOSE} height="32" width="32" />
+          {/* </a> */}
         </Div>
-        <Div
-          cssProp={`
-            max-width: 640px;
-            margin: 120px auto;
-        `}
-        >
+        <Div className="questions-sections">
           <TransitionGroup>
             {questions.map((value, index) => {
               if (count === value.id) {
-                return (
-                  <FadeAndSlideTransition duration={150} key={index}>
-                    <Question
-                      question={value.question}
-                      onChange={updateQuestions}
-                      options={value.options}
-                      name={value.name}
-                      value={value.answer}
-                      isChecked={val => val === value.answer}
-                    />
-                  </FadeAndSlideTransition>
-                );
+                return <FadeAndSlideTransition duration={150} key={index}>
+                    <Question question={value.question} onChange={updateQuestions} options={value.options} name={value.name} value={value.answer} isChecked={val => val === value.answer} />
+                  </FadeAndSlideTransition>;
               }
             })}
           </TransitionGroup>
         </Div>
 
-        <Div
-          cssProp={`
-            position: fixed;
-            height: 95px;
-            width: 100%;
-            bottom: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction:column;
-            padding: 32px 0;
-            button {
-              display:flex;
-              align-items: center;
-            }
-            button:first-of-type {
-              &:hover {
-                color: #aaa;
-              }
-              svg {
-                fill: #ddd;
-              }
-            }
-            button:last-of-type {
-              svg {
-                fill: #ffffff;
-              }
-            }
-          `}
-        >
+        <Div className="footer-section">
           <Button kind="ghost" color={`#ddd`} onClick={prevStep}>
             <Icon icon={icons.IOS_ARROW_BACK} />
             Go back
           </Button>
 
-          <Button
-            size="lg"
-            onClick={nextStep}
-            background={`linear-gradient(to bottom, #759BE7 0%, #8989F6 100%) !important`}
-            boxShadow={`0 2px 2px 0 rgba(0, 0, 0, 0.05), inset 0 0 0 1px rgba(0, 0, 0, 0.1)`}
-          >
+          <Button size="lg" onClick={nextStep} background={`linear-gradient(to bottom, #759BE7 0%, #8989F6 100%) !important`} boxShadow={`0 2px 2px 0 rgba(0, 0, 0, 0.05), inset 0 0 0 1px rgba(0, 0, 0, 0.1)`}>
             Next Question <Icon icon={icons.IOS_ARROW_FORWARD} />
           </Button>
         </Div>
-      </Div>
-    );
+      </FinancialCheckupStyle>;
   }
 }
 
