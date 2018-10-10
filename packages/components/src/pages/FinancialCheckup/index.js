@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import TransitionGroup from 'react-transition-group/TransitionGroup';
+import { CSSTransition } from 'react-transition-group';
 import { ProgressBar, Question } from './components';
 import { Div } from '../../primitives/Layout';
 import Icon from '../../primitives/Icon';
@@ -91,7 +92,7 @@ function SlideDownTransition({ children, duration, in: inProp }) {
   );
 }
 
-const FinancialCheckupStyle = styled.div`
+const FinancialCheckupContainer = styled.div`
   .header {
     position: fixed;
     width: 100%;
@@ -148,9 +149,33 @@ const FinancialCheckupStyle = styled.div`
       }
     }
   }
+  .question-enter {
+    opacity: 0.01;
+    /* transform: translateY(10%); */
+  }
+  .question-enter-active {
+    opacity: 1;
+    /* transform: translateY(0%); */
+    transition: all 500ms cubic-bezier(0.2, 0, 0, 1);
+  }
+  .question-exit {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .question-exit-active {
+    opacity: 0.01;
+    transform: scale(0.9) translateY(10%);
+    transition: all 500ms cubic-bezier(0.2, 0, 0, 1);
+  }
 `;
 
 class FinancialCheckupPage extends React.Component {
+  state = {
+    show: false,
+  };
+  toggleShow = () => {
+    this.setState(({ show }) => ({ show: !show }));
+  };
   render() {
     const {
       state: {
@@ -162,37 +187,56 @@ class FinancialCheckupPage extends React.Component {
         progressBarWidth,
       },
     } = this.props;
-    return <FinancialCheckupStyle>
-        <Div className="header">
+    return (
+      <FinancialCheckupContainer>
+        <div className="header">
           <Heading>Simpu</Heading>
           <ProgressBar width={progressBarWidth} />
           {/* <a href="#"> */}
-            <Icon icon={icons.ANDROID_CLOSE} height="32" width="32" />
+          <Icon icon={icons.ANDROID_CLOSE} height="32" width="32" />
           {/* </a> */}
-        </Div>
-        <Div className="questions-sections">
-          <TransitionGroup>
-            {questions.map((value, index) => {
-              if (count === value.id) {
-                return <FadeAndSlideTransition duration={150} key={index}>
-                    <Question question={value.question} onChange={updateQuestions} options={value.options} name={value.name} value={value.answer} isChecked={val => val === value.answer} />
-                  </FadeAndSlideTransition>;
-              }
-            })}
-          </TransitionGroup>
-        </Div>
+        </div>
 
-        <Div className="footer-section">
+        <div className="questions-sections">
+          {questions.map((value, index) => {
+            return (
+              <CSSTransition
+                classNames="question"
+                in={count === value.id}
+                timeout={500}
+                unmountOnExit
+                key={index.toString()}
+              >
+                <Question
+                  question={value.question}
+                  onChange={updateQuestions}
+                  options={value.options}
+                  name={value.name}
+                  value={value.answer}
+                  isChecked={val => val === value.answer}
+                />
+              </CSSTransition>
+            );
+          })}
+        </div>
+
+        <div className="footer-section">
           <Button kind="ghost" color={`#ddd`} onClick={prevStep}>
             <Icon icon={icons.IOS_ARROW_BACK} />
             Go back
           </Button>
 
-          <Button size="lg" onClick={nextStep} background={`linear-gradient(to bottom, #759BE7 0%, #8989F6 100%) !important`} boxShadow={`0 2px 2px 0 rgba(0, 0, 0, 0.05), inset 0 0 0 1px rgba(0, 0, 0, 0.1)`}>
+          <Button
+            size="lg"
+            onClick={nextStep}
+            background={`linear-gradient(to bottom, #759BE7 0%, #8989F6 100%) !important`}
+            boxShadow={`0 2px 2px 0 rgba(0, 0, 0, 0.05), inset 0 0 0 1px rgba(0, 0, 0, 0.1)`}
+          >
             Next Question <Icon icon={icons.IOS_ARROW_FORWARD} />
           </Button>
-        </Div>
-      </FinancialCheckupStyle>;
+        </div>
+      </FinancialCheckupContainer>
+    );
   }
 }
 

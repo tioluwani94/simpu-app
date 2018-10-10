@@ -9,6 +9,7 @@ import {
 import { Radio } from '../primitives/Radio';
 import { Div } from '../primitives/Layout';
 import FinancialCheckupPage from '../pages/FinancialCheckup';
+import { ShowAnimation } from '../pages/FinancialCheckup/animation';
 
 storiesOf('Financial checkup page', module)
   .add('Progress bar', () => <ProgressBar />)
@@ -58,4 +59,7 @@ storiesOf('Financial checkup page', module)
         }}
       </AppContext.Consumer>
     </AppProvider>
+  ))
+  .add('Animation test', () => (
+    <ShowAnimation/>
   ));
